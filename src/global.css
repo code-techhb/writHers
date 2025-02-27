@@ -1,0 +1,43 @@
+:root {
+  /* Main Colors */
+  --background: #f5f1e8;
+  --card-bg: #e8dcc9;
+  --primary: #854d27;
+  --secondary: #2a5e4c;
+
+  /* Accent Colors */
+  --accent-1: #a15c5c;
+  --accent-2: #6c8f9e;
+  --accent-3: #d4a04f;
+
+  /* Text Colors */
+  --text-dark: #2f2f2f;
+  --text-medium: #5c5c5c;
+  --text-light: #888888;
+  --white: #fff;
+
+  /* Additional UI Colors */
+  --shadow: rgba(133, 77, 39, 0.15);
+  --hover: rgba(42, 94, 76, 0.08);
+  --divider: #d8cdbf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.appContainer {
+  background-color: var(--background);
+}

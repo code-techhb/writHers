@@ -1,0 +1,109 @@
+.collectionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+}
+
+.collectionSection h2 {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary);
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.collectionSection h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 0.25rem;
+  background: #e8964a;
+  border-radius: 0.125rem;
+}
+
+.collectionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 48rem) {
+  .collectionSection {
+    padding: 2.5rem 1rem;
+  }
+
+  .collectionSection h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .collectionGrid {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 30rem) {
+  .collectionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation for grid items appearing */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.collectionGrid > div {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Staggered animation delay for each card */
+.collectionGrid > div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.collectionGrid > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.collectionGrid > div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.collectionGrid > div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.collectionGrid > div:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.collectionGrid > div:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.collectionGrid > div:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.collectionGrid > div:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.collectionGrid > div:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.collectionGrid > div:nth-child(n + 10) {
+  animation-delay: 1s;
+}

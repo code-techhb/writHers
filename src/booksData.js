@@ -1,132 +1,192 @@
-//FIX THIS LATER: Add correct quotes
+import uneSiLongueLettreImage from "../src/assets/une_si_longue_lettre.jpg";
+import becomingImage from "../src/assets/becoming.jpg";
+import taDeuxiemeVieImage from "../src/assets/ta_deuxieme_vie.jpg";
+import letterToMyDaughterImage from "../src/assets/letter_to_my_daugther.jpg";
+import retourALessentielImage from "../src/assets/retour_a_l_esensciel.jpg";
+import etPourquoiPasImage from "../src/assets/et_pourquoi_pas.jpg";
+import neuroscientistImage from "../src/assets/so_you_want_to_be_neuroscientist.jpg";
+import tonDernierRegardImage from "../src/assets/ton_dernier_regard.jpg";
+import whenIWasPuertoRicanImage from "../src/assets/when_I_was_puerto_rican.jpg";
+import breakingThroughImage from "../src/assets/breaking_through.jpg";
+import theLightWeCarryImage from "../src/assets/the_light_we_carry.jpg";
+import educatedImage from "../src/assets/educated.jpg";
+import beReadyImage from "../src/assets/be_ready.jpg";
+import jeunerImage from "../src/assets/jeuner.jpg";
+import maRouteImage from "../src/assets/surMaRoute.jpg";
+import renoueImage from "../src/assets/renoueAvecTonCoeur.jpg";
 
 const books = [
   {
+    id: 1,
     title: "Une Si Longue Lettre",
     author: "Mariama Bâ",
-    coverImage: "une_si_longue_lettre_cover.jpg",
+    coverImage: uneSiLongueLettreImage,
     language: "French",
-    translatedInEnglish: true,
-    genre: "Epistolary Novel, Feminist Literature",
-    quote:
-      "Partir! Le mot a des vertus apaisantes. Le prononcé seulement détourne le cours de certaines pensées.",
+    translated: true,
+    genre: "Novel",
+    quote: `"Puissance des livres,invention merveilleuse de l'astucieuse intelligence humaine. Signes divers,associés en sons,sons différents qui moulent le mot.Agencement de mots d'où jaillit l'Idée, la Pensée, l'Histoire,la Science,la Vie. Instrument unique de relation et de culture, moyen inégalé de donner et de recevoir.Les Livres soudent des générations au même labeur continu qui fait progresser"
+`,
   },
   {
+    id: 2,
     title: "Becoming",
     author: "Michelle Obama",
-    coverImage: "becoming_cover.jpg",
+    coverImage: becomingImage,
     language: "English",
-    translatedInEnglish: true,
+    translated: true,
     genre: "Autobiography, Memoir",
     quote:
-      "For me, becoming isn't about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self.",
+      "For me, becoming isn't about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn't end.",
   },
   {
+    id: 3,
     title: "Ta Deuxième vie commence quand tu réalises que tu n'en as qu'une",
     author: "Raphaëlle Giordano",
-    coverImage: "ta_deuxieme_vie_cover.jpg",
+    coverImage: taDeuxiemeVieImage,
     language: "French",
-    translatedInEnglish: true,
-    genre: "Self-Help, Fiction",
-    quote: "Le bonheur n'est pas au bout du chemin, il est le chemin.",
+    translated: true,
+    genre: "Developpement Personelle",
+    quote:
+      "Ce n'est pas entre les murs d'un cabinet que la personne qui désire changer trouvera sa vérité, ni qu'elle comprendra quel sens donner à sa vie! C'est dans l'action, le concret, l'expérience...",
   },
   {
+    id: 4,
     title: "Letter to My Daughter",
     author: "Maya Angelou",
-    coverImage: "letter_to_my_daughter_cover.jpg",
+    coverImage: letterToMyDaughterImage,
     language: "English",
-    translatedInEnglish: true,
-    genre: "Autobiography, Memoir, Essays",
+    translated: true,
+    genre: "Autobiography",
     quote:
       "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
   },
   {
+    id: 5,
     title: "Retour à L'E-sens-ciel",
     author: "Myriam Lakdhar",
-    coverImage: "retour_a_lessentiel_cover.jpg",
+    coverImage: retourALessentielImage,
     language: "French",
-    translatedInEnglish: false,
+    translated: "not",
     genre: "Spirituality",
-    quote: "Le vrai bonheur ne vient pas de l'extérieur mais de l'intérieur.",
+    quote: "-----",
   },
   {
-    title: "Et pourquoi pas ?",
+    id: 6,
+    title: "Et Pourquoi pas ?",
     author: "Meryem Belmokhtar",
-    coverImage: "et_pourquoi_pas_cover.jpg",
+    coverImage: etPourquoiPasImage,
     language: "French",
-    translatedInEnglish: false,
-    genre: "Motivational, Self-Help",
-    quote: "Chaque obstacle est une opportunité déguisée.",
+    translated: "not",
+    genre: "Memoir",
+    quote:
+      "...s'il y'a bien une chose que j'ai apprise, en tant que femme et mère épanouie, c'est que chaque chose qui nous arrive dans notre vie a forcément son rôle, parfois on s'en rend compte très vite, parfois il faut un peu de temps et beaucoup de patience. J'ai aussi compris que tant que l'on cherche le bien, on trouve le bien, et que tant que l'on invoque Dieu, Il répond présent.....",
   },
   {
+    id: 7,
     title: "So You Want to Be a Neuroscientist?",
     author: "Ashley Juavinett",
-    coverImage: "so_you_want_to_be_a_neuroscientist_cover.jpg",
+    coverImage: neuroscientistImage,
     language: "English",
-    translatedInEnglish: true,
+    translated: true,
     genre: "Science, Career Guide",
-    quote:
-      "Neuroscience isn't just about understanding the brain—it's about understanding what makes us human.",
+    quote: "----",
   },
   {
+    id: 8,
     title: "Ton Dernier regard",
     author: "Oumeyma Amjid",
-    coverImage: "ton_dernier_regard_cover.jpg",
+    coverImage: tonDernierRegardImage,
     language: "French",
-    translatedInEnglish: false,
+    translated: "not",
     genre: "Islam",
     quote:
-      "Dans ses yeux, j'ai vu le reflet de tout ce que nous aurions pu être.",
+      "L'Idée de mourir fait peur, et c'est normal. Pourtant, dès que tu décides d'accepter la réalité de la mort, tu t'ouvres à une vie alignée avec tes vraies valeurs. Alignée à ce qui est réellement important pour toi. Tu oses, tu grandis, tu fais de meilleurs choix. Tu oeuvres pour Allah, tu recherches son amour, Sa satisfaction.... Sa rencontre. .....",
   },
   {
+    id: 9,
     title: "When I Was Puerto Rican",
     author: "Esmeralda Santiago",
-    coverImage: "when_i_was_puerto_rican_cover.jpg",
+    coverImage: whenIWasPuertoRicanImage,
     language: "English",
-    translatedInEnglish: true,
-    genre: "Memoir, Coming-of-age",
-    quote:
-      "The baby was a girl, and we named her Delsa, a combination of Ramona's middle name, Delia, and Mami's first name, Esperanza.",
+    translated: true,
+    genre: "Memoir",
+    quote: "---",
   },
   {
+    id: 10,
     title: "Breaking Through: My Life in Science",
     author: "Dr. Katalin Kariko",
-    coverImage: "breaking_through_cover.jpg",
+    coverImage: breakingThroughImage,
     language: "English",
-    translatedInEnglish: true,
-    genre: "Autobiography, Science",
+    translated: true,
+    genre: "Autobiography",
     quote:
-      "Science is about finding patterns in nature that allow us to understand the world around us.",
+      "What I lacked in natural ability, I could make up for in effort. I could work harder, put in more hours, do more, and do it with greater care.",
   },
   {
+    id: 11,
     title: "The Light We Carry",
     author: "Michelle Obama",
-    coverImage: "the_light_we_carry_cover.jpg",
+    coverImage: theLightWeCarryImage,
     language: "English",
-    translatedInEnglish: true,
-    genre: "Self-Help, Memoir",
+    translated: true,
+    genre: "Memoir",
     quote:
-      "When we are able to recognize our own light, we become empowered to use it.",
+      "When we learn to foster what's unique in the people around us, we become better able to build compassionate communities and make meaningful change.",
   },
   {
+    id: 12,
     title: "Educated",
     author: "Tara Westover",
-    coverImage: "educated_cover.jpg",
+    coverImage: educatedImage,
     language: "English",
-    translatedInEnglish: true,
+    translated: true,
     genre: "Memoir, Autobiography",
-    quote:
-      "You can love someone and still choose to say goodbye to them. You can miss a person every day, and still be glad that they are no longer in your life.",
+    quote: `It has never occurred to you," he said,"that you might have as much right to be here as anyone.`,
   },
   {
+    id: 13,
     title: "Be Ready When the Luck Happens",
     author: "Ina Garten",
-    coverImage: "be_ready_when_luck_happens_cover.jpg",
+    coverImage: beReadyImage,
     language: "English",
-    translatedInEnglish: true,
-    genre: "Memoir, Cookbook",
+    translated: true,
+    genre: "Memoir",
     quote:
-      "It's not about being the most talented; it's about being prepared when opportunity knocks.",
+      "Don't worry, Passages assured me, your twenties are the time when you master what you think you're supposed to do. But in your thirties, when you've figured out what you like and don't like, and you're more confident, you can move on to what you really want to do, which might be totally different.",
+  },
+  {
+    id: 14,
+    title: "Sur Ma Route",
+    author: "Miana Bayani",
+    coverImage: maRouteImage,
+    language: "French",
+    translated: true,
+    genre: "Jeunesse",
+    quote:
+      ".... La route sera longue, Ali, mais c'est comme ça. Tu peux trébucher et attendre que quelqu'un t'aide à te relever, ou bien décider que tu es assez forte pour te relever toute seule et pour continuer à avancer. C'est ton choix, Ali. ....",
+  },
+  {
+    id: 15,
+    title: "Jeuner, Avoir Soif de Dieu",
+    author: "Sabrina Heartist Guassim",
+    coverImage: jeunerImage,
+    language: "French",
+    translated: true,
+    genre: "Spirituality, Islam",
+    quote:
+      "....Quand à toi, je te propose de faire de ta solitude la meilleure des compagnes, de faire de ta solitude non pas une ombre mais une lumière dans ta foi. Ta foi c'est la preuve que tu n'es pas seul(e)......",
+  },
+  {
+    id: 16,
+    title: "Renoue avec ton coeur",
+    author: "Yasmin Mogahed",
+    coverImage: renoueImage,
+    language: "French",
+    translated: true,
+    genre: "Spirituality, Islam",
+    quote:
+      "Cet espoir d'obtenir la miséricorde d'Allah devrait être la raison pour laquelle nous désirons pardonner, et un jour, accéder au seul monde qui soit vraiment parfait.",
   },
 ];
 

@@ -5,32 +5,179 @@
   align-items: center;
   padding: 4rem 2rem;
   background-color: var(--background);
+  min-height: 100vh;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 1200px;
+  width: 100%;
 }
 
 .tagline {
-  font-family: "Courier New", monospace;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  color: var(--text);
-  margin: 2rem 0;
-  line-height: 1.5;
-  max-width: 800px;
+  color: var(--text-dark);
+  margin: 0 0 3rem;
+  line-height: 1.2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.brandName {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taglineSeparator {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: var(--secondary);
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.taglineText {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .aboutBox {
   display: flex;
   align-items: center;
-  gap: 20rem;
-  justify-content: center;
-  padding: 0 3rem;
-  max-width: 120rem;
+  gap: 5rem;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-img {
-  width: 40rem;
-  border-radius: 50%;
-  border: dotted 4px var(--secondary);
+.aboutBox:hover {
+  transform: translateY(-1px);
+}
+
+.imageWrapper {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+  border: solid 4px var(--secondary);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 .description {
-  font-size: 1.5rem;
+  flex: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.descriptionTitle {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.descriptionTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: var(--secondary);
+  border-radius: 2px;
+}
+
+.description p {
+  margin-bottom: 1.2rem;
+}
+
+.highlight {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.callToAction {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 4px solid var(--secondary);
+  background-color: rgba(var(--secondary-rgb), 0.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .aboutBox {
+    gap: 3rem;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+  }
+
+  .brandName {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutBox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    max-width: 300px;
+  }
+
+  .descriptionTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .callToAction {
+    border-left: none;
+    border-top: 4px solid var(--secondary);
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionContainer {
+    padding: 2rem 1rem;
+  }
+
+  .brandName {
+    font-size: 2.8rem;
+  }
+
+  .taglineText {
+    font-size: 1.5rem;
+  }
+
+  .imageWrapper {
+    max-width: 250px;
+  }
 }

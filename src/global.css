@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
 :root {
   /* Main Colors */
   --background: #f5f1e8;
@@ -20,6 +22,10 @@
   --shadow: rgba(133, 77, 39, 0.15);
   --hover: rgba(42, 94, 76, 0.08);
   --divider: #d8cdbf;
+
+  /* Font Variables */
+  --heading-font: "Merriweather", serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 * {
@@ -36,6 +42,24 @@ body {
   font-family: "Courier New", sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+/* Apply fonts to elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+body,
+p,
+span,
+button,
+div {
+  font-family: var(--body-font);
 }
 
 .appContainer {

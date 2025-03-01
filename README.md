@@ -1,6 +1,6 @@
 # CodePath Web 102 Project 1 - WritHer
 
-<img src='/solution.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./public/solution.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with Kap
 

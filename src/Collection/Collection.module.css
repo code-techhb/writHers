@@ -35,8 +35,8 @@
   justify-content: center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 48rem) {
+/* Queries */
+@media (max-width: 768px) {
   .collectionSection {
     padding: 2.5rem 1rem;
   }
@@ -47,15 +47,8 @@
   }
 
   .collectionGrid {
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
-  }
-}
-
-/* For very small screens */
-@media (max-width: 30rem) {
-  .collectionGrid {
-    grid-template-columns: 1fr;
   }
 }
 

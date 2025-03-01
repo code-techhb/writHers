@@ -11,8 +11,9 @@ const Collection = () => {
   const myBooks = getBooks(books);
 
   return (
-    <section className={styles.collectionSection}>
-      <h2> Discover some of my Favorites books by WritHers</h2>
+    <section className={styles.collectionSection} id="collection-section">
+      <h2> Books by WritHers I enjoyed reading</h2>
+
       <div className={styles.collectionGrid}>
         {myBooks.map((book, index) => (
           <Card

@@ -24,7 +24,7 @@ const books = [
     language: "French",
     translated: true,
     genre: "Novel",
-    quote: `"Puissance des livres,invention merveilleuse de l'astucieuse intelligence humaine. Signes divers,associés en sons,sons différents qui moulent le mot.Agencement de mots d'où jaillit l'Idée, la Pensée, l'Histoire,la Science,la Vie. Instrument unique de relation et de culture, moyen inégalé de donner et de recevoir.Les Livres soudent des générations au même labeur continu qui fait progresser"
+    quote: `Puissance des livres, invention merveilleuse de l'astucieuse intelligence humaine. Signes divers,associés en sons, sons différents qui moulent le mot. Agencement de mots d'où jaillit l'Idée, la Pensée, l'Histoire,la Science,la Vie. Instrument unique de relation et de culture, moyen inégalé de donner et de recevoir. Les Livres soudent des générations au même labeur continu qui fait progresser
 `,
   },
   {
@@ -32,20 +32,20 @@ const books = [
     title: "Becoming",
     author: "Michelle Obama",
     coverImage: becomingImage,
-    language: "English",
+    language: "French, English",
     translated: true,
-    genre: "Autobiography, Memoir",
+    genre: "Memoir",
     quote:
       "For me, becoming isn't about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn't end.",
   },
   {
     id: 3,
-    title: "Ta Deuxième vie commence quand tu réalises que tu n'en as qu'une",
+    title: "Ta Deuxième Vie Commence Quand Tu Réalises Que Tu N'en As Qu'Une",
     author: "Raphaëlle Giordano",
     coverImage: taDeuxiemeVieImage,
     language: "French",
     translated: true,
-    genre: "Developpement Personelle",
+    genre: "Personal Growth",
     quote:
       "Ce n'est pas entre les murs d'un cabinet que la personne qui désire changer trouvera sa vérité, ni qu'elle comprendra quel sens donner à sa vie! C'est dans l'action, le concret, l'expérience...",
   },
@@ -58,28 +58,29 @@ const books = [
     translated: true,
     genre: "Autobiography",
     quote:
-      "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+      "Be certain that you do not die without having done something wonderful for humanity.",
   },
   {
     id: 5,
-    title: "Retour à L'E-sens-ciel",
-    author: "Myriam Lakdhar",
+    title: "Retour à L'E-Sens-Ciel",
+    author: "Myriam Lakdhar-Bounamcha",
     coverImage: retourALessentielImage,
     language: "French",
-    translated: "not",
+    translated: false,
     genre: "Spirituality",
-    quote: "-----",
+    quote:
+      "Pour vivre sereinement, spirituellement et de façon riche et épanouie, tu dois, me disait-il, monter la garde à la porte de ton jardin et ne laisser pénétrer et circuler que les meilleures informations. Celles qui t'éduquent, celles qui te protègent, celles qui sont vraies, douces, justes, sages et non violentes.",
   },
   {
     id: 6,
-    title: "Et Pourquoi pas ?",
+    title: "Et Pourquoi Pas ?",
     author: "Meryem Belmokhtar",
     coverImage: etPourquoiPasImage,
     language: "French",
-    translated: "not",
+    translated: false,
     genre: "Memoir",
     quote:
-      "...s'il y'a bien une chose que j'ai apprise, en tant que femme et mère épanouie, c'est que chaque chose qui nous arrive dans notre vie a forcément son rôle, parfois on s'en rend compte très vite, parfois il faut un peu de temps et beaucoup de patience. J'ai aussi compris que tant que l'on cherche le bien, on trouve le bien, et que tant que l'on invoque Dieu, Il répond présent.....",
+      "S'il y'a bien une chose que j'ai apprise, en tant que femme et mère épanouie, c'est que chaque chose qui nous arrive dans notre vie a forcément son rôle, parfois on s'en rend compte très vite, parfois il faut un peu de temps et beaucoup de patience. J'ai aussi compris que tant que l'on cherche le bien, on trouve le bien, et que tant que l'on invoque Dieu, Il répond présent",
   },
   {
     id: 7,
@@ -87,17 +88,18 @@ const books = [
     author: "Ashley Juavinett",
     coverImage: neuroscientistImage,
     language: "English",
-    translated: true,
+    translated: false,
     genre: "Science, Career Guide",
-    quote: "----",
+    quote:
+      "As a student, it can help to build a support group with your lab mates or other folks in your program. Spend some time giving each other positive feedback about your projects and progress in the lab. Talk about uncertainties you feel about your research or about your next steps.",
   },
   {
     id: 8,
-    title: "Ton Dernier regard",
+    title: "Ton Dernier Regard",
     author: "Oumeyma Amjid",
     coverImage: tonDernierRegardImage,
     language: "French",
-    translated: "not",
+    translated: false,
     genre: "Islam",
     quote:
       "L'Idée de mourir fait peur, et c'est normal. Pourtant, dès que tu décides d'accepter la réalité de la mort, tu t'ouvres à une vie alignée avec tes vraies valeurs. Alignée à ce qui est réellement important pour toi. Tu oses, tu grandis, tu fais de meilleurs choix. Tu oeuvres pour Allah, tu recherches son amour, Sa satisfaction.... Sa rencontre. .....",
@@ -110,7 +112,7 @@ const books = [
     language: "English",
     translated: true,
     genre: "Memoir",
-    quote: "---",
+    quote: "A ship that doesn't sail, never reaches port.",
   },
   {
     id: 10,
@@ -141,7 +143,7 @@ const books = [
     coverImage: educatedImage,
     language: "English",
     translated: true,
-    genre: "Memoir, Autobiography",
+    genre: "Memoir",
     quote: `It has never occurred to you," he said,"that you might have as much right to be here as anyone.`,
   },
   {
@@ -161,10 +163,10 @@ const books = [
     author: "Miana Bayani",
     coverImage: maRouteImage,
     language: "French",
-    translated: true,
+    translated: false,
     genre: "Jeunesse",
     quote:
-      ".... La route sera longue, Ali, mais c'est comme ça. Tu peux trébucher et attendre que quelqu'un t'aide à te relever, ou bien décider que tu es assez forte pour te relever toute seule et pour continuer à avancer. C'est ton choix, Ali. ....",
+      "La route sera longue, Ali, mais c'est comme ça. Tu peux trébucher et attendre que quelqu'un t'aide à te relever, ou bien décider que tu es assez forte pour te relever toute seule et pour continuer à avancer. C'est ton choix, Ali.",
   },
   {
     id: 15,
@@ -172,10 +174,10 @@ const books = [
     author: "Sabrina Heartist Guassim",
     coverImage: jeunerImage,
     language: "French",
-    translated: true,
-    genre: "Spirituality, Islam",
+    translated: false,
+    genre: "Spirituality",
     quote:
-      "....Quand à toi, je te propose de faire de ta solitude la meilleure des compagnes, de faire de ta solitude non pas une ombre mais une lumière dans ta foi. Ta foi c'est la preuve que tu n'es pas seul(e)......",
+      "Quand à toi, je te propose de faire de ta solitude la meilleure des compagnes, de faire de ta solitude non pas une ombre mais une lumière dans ta foi. Ta foi c'est la preuve que tu n'es pas seul(e).",
   },
   {
     id: 16,
@@ -184,7 +186,7 @@ const books = [
     coverImage: renoueImage,
     language: "French",
     translated: true,
-    genre: "Spirituality, Islam",
+    genre: "Spirituality",
     quote:
       "Cet espoir d'obtenir la miséricorde d'Allah devrait être la raison pour laquelle nous désirons pardonner, et un jour, accéder au seul monde qui soit vraiment parfait.",
   },

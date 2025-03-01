@@ -2,26 +2,27 @@
 
 :root {
   /* Main Colors */
-  --background: #f5f1e8;
-  --card-bg: #e8dcc9;
-  --primary: #854d27;
-  --secondary: #2a5e4c;
+  --background: #292631;
+  --card-bg: #3a3744;
+  --primary: #d17eaa;
+  --secondary: #a47cb9;
 
   /* Accent Colors */
-  --accent-1: #a15c5c;
-  --accent-2: #6c8f9e;
-  --accent-3: #d4a04f;
+  --accent-1: #ffd3e8;
+  --accent-2: #443e50;
+  --accent-3: #e793b7;
 
   /* Text Colors */
-  --text-dark: #2f2f2f;
-  --text-medium: #5c5c5c;
-  --text-light: #888888;
+  --text-dark: #f7f0f5;
+  --text-medium: #ddd5e0;
+  --text-light: #b6adc1;
+  --text: #3a3744;
   --white: #fff;
 
   /* Additional UI Colors */
-  --shadow: rgba(133, 77, 39, 0.15);
-  --hover: rgba(42, 94, 76, 0.08);
-  --divider: #d8cdbf;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --hover: rgba(209, 126, 170, 0.15);
+  --divider: #443e50;
 
   /* Font Variables */
   --heading-font: "Merriweather", serif;

@@ -18,7 +18,7 @@
   font-size: 3rem;
   text-align: center;
   color: var(--text-dark);
-  margin: 0 0 3rem;
+  margin-bottom: 3.5rem;
   line-height: 1.2;
   position: relative;
   display: flex;
@@ -27,6 +27,7 @@
 }
 
 .brandName {
+  font-family: var(--heading-font);
   font-size: 4.5rem;
   font-weight: 700;
   color: var(--primary);
@@ -47,7 +48,7 @@
 .taglineText {
   font-size: 2rem;
   font-weight: 400;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .aboutBox {
@@ -84,7 +85,7 @@
 
 .description {
   flex: 1.5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: var(--text-dark);
 }
@@ -96,6 +97,10 @@
   font-weight: 600;
   position: relative;
   padding-bottom: 0.5rem;
+}
+
+.descriptionTitle .brandName {
+  font-size: 2.5rem;
 }
 
 .descriptionTitle::after {
@@ -119,13 +124,27 @@
 }
 
 .callToAction {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-style: italic;
   margin-top: 2rem;
   padding: 1rem;
   border-left: 4px solid var(--secondary);
   background-color: rgba(var(--secondary-rgb), 0.05);
+}
+
+.ctaBtn {
+  background-color: var(--secondary);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.ctaBtn:hover {
+  background-color: var(--primary);
+  transform: translateY(-3px);
 }
 
 /* Media Queries for Responsiveness */
